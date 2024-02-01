@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     #installed apps
-    'painting',
+    'gallery',
 ]
 
 MIDDLEWARE = [

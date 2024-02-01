@@ -1,11 +1,11 @@
 from rest_framework import serializers
 
-from painting.models import Painting
+from gallery.models import Gallery
 
 
-class PaintingSerializer(serializers.ModelSerializer):
+class GallerySerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Painting
+        model = Gallery
         fields = ['title', 'description', 'dimensions', 'image', 'published', 'created', 'updated', 'id']
         read_only_fields = ['created', 'updated', 'id']

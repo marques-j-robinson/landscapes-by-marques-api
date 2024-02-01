@@ -1,9 +1,9 @@
 from rest_framework import routers
 
-from painting.viewsets import PaintingViewSet
+from gallery.viewsets import GalleryViewSet
 
 router = routers.SimpleRouter()
 
-router.register(r'painting', PaintingViewSet, basename='painting')
+router.register(r'gallery', GalleryViewSet, basename='gallery')
 
 urlpatterns = router.urls

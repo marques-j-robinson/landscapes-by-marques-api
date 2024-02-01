@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Painting(models.Model):
+class Gallery(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     dimensions = models.CharField(max_length=20)
